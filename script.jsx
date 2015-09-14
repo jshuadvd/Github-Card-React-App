@@ -3,7 +3,7 @@ var Card = React.createClass({
     return (
 
       <div>
-        <img src="" />
+        <img src="https://avatars.githubusercontent.com/u/7577457?v=3" />
         <h3>Name Here</h3>
         <hr/>
       </div>
