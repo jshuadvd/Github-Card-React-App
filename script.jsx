@@ -4,7 +4,7 @@ var Card = React.createClass({
 
       <div>
         <img src="https://avatars.githubusercontent.com/u/7577457?v=3" width="80" />
-        <h3>Name Here</h3>
+        <h3>JSHUADVD</h3>
         <hr/>
       </div>
     );
