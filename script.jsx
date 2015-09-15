@@ -1,4 +1,7 @@
 var Card = React.createClass({
+  getInitialState: function() {
+    return {};
+  }
   render: function() {
     return (
 
@@ -15,7 +18,7 @@ var Main = React.createClass({
   render: function() {
     return (
       <div>
-      <Card />
+      <Card login="JSHUADVD" />
       </div>
 
 
