@@ -3,7 +3,7 @@ var Card = React.createClass({
     return {};
   },
   ComponentDidMount: function(){
-    $.get()
+    $.get("https://api.github.com/users/jshuadvd", function(){})
   }
   render: function() {
     return (
