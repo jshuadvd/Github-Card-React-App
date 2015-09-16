@@ -2,18 +2,18 @@ var Card = React.createClass({
   getInitialState: function() {
     return {};
   },
-  ComponentDidMount: function(){
+  componentDidMount: function() {
     var component = this;
     $.get("https://api.github.com/users/jshuadvd", function(data) {
       component.setState(data);
     });
-  }
+  },
   render: function() {
     return (
 
       <div>
-        <img src="https://avatars.githubusercontent.com/u/7577457?v=3" width="80" />
-        <h3>JSHUADVD</h3>
+        <img src={this.state.avatar_url} width="80" />
+        <h3>{this.state.name}</h3>
         <hr/>
       </div>
     );
