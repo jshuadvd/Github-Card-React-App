@@ -2,6 +2,9 @@ var Card = React.createClass({
   getInitialState: function() {
     return {};
   },
+  ComponentDidMount: function(){
+    $.get()
+  }
   render: function() {
     return (
 
