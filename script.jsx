@@ -25,6 +25,9 @@ var Card = React.createClass({
 });
 
 var Main = React.createClass({
+  getInitialState: function() {
+    return {logins: ['mpj','torvalds']};
+  },
   render: function() {
     return ( < div >
       < Card login = "JSHUADVD" / >
