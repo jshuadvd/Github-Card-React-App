@@ -29,6 +29,8 @@ var Main = React.createClass({
     return {logins: ['mpj','torvalds']};
   },
   render: function() {
+    var cards = this.state.logins.map(function(login) {
+      return (<Card login={login} />)});
     return ( < div >
       < Card login = "JSHUADVD" / >
       < Card login = "ericdouglas" / >
