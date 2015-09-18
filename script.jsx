@@ -26,7 +26,7 @@ var Card = React.createClass({
 
 var Main = React.createClass({
   getInitialState: function() {
-    return {logins: ['mpj','torvalds', 'jshuadvd', 'ericdouglas']};
+    return {logins: []};
   },
   render: function() {
     var cards = this.state.logins.map(function(login) {
