@@ -10,7 +10,6 @@ var Card = React.createClass({
   },
   render: function() {
     return (
-
       <div>
       <img src = {this.state.avatar_url} width = "80" / >
       <h3>{this.state.name}</h3>
@@ -24,7 +23,7 @@ var Form = React.createClass({
   render  function() {
     return (
       <form>
-        <input placeholder="Github Login" />
+        <input placeholder="github login" />
         <button>Add</button>
       </form>
     );
@@ -37,15 +36,13 @@ var Main = React.createClass({
   },
   render: function() {
     var cards = this.state.logins.map(function(login) {
-      return (<Card login={login} />)});
+      return (<Card login={login} />);
+    });
     return (
-
       <div>
         <Form />
         {cards}
       </div>
-
-
     );
   }
 });
