@@ -24,6 +24,16 @@ var Card = React.createClass({
   }
 });
 
+var Form = React.createClass({
+  render  function() {
+    return (
+      <form>
+
+      </form>
+    );
+  }
+});
+
 var Main = React.createClass({
   getInitialState: function() {
     return {logins: []};
