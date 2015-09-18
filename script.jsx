@@ -11,15 +11,11 @@ var Card = React.createClass({
   render: function() {
     return (
 
-      < div >
-      < img src = {
-        this.state.avatar_url
-      }
-      width = "80" / >
-      < h3 > {
-        this.state.name
-      } < /h3> < hr / >
-      < /div>
+      <div>
+      <img src = {this.state.avatar_url} width = "80" / >
+      <h3>{this.state.name}</h3>
+      <hr />
+      </div>
     );
   }
 });
@@ -44,12 +40,10 @@ var Main = React.createClass({
       return (<Card login={login} />)});
     return (
 
-       < div >
-
-      {cards}
-
-
-      < /div>
+      <div>
+        <Form />
+        {cards}
+      </div>
 
 
     );
