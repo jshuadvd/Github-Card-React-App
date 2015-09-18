@@ -28,7 +28,7 @@ var Form = React.createClass({
   render  function() {
     return (
       <form>
-
+        <input placeholder="Github Login" />
       </form>
     );
   }
