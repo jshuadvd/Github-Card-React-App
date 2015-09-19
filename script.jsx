@@ -20,7 +20,7 @@ var Card = React.createClass({
 });
 
 var Form = React.createClass({
-  render  function() {
+  render:  function() {
     return (
       <form>
         <input placeholder="github login" />
@@ -43,7 +43,7 @@ var Main = React.createClass({
         <Form />
         {cards}
       </div>
-    );
+    )
   }
 });
 
