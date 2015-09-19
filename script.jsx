@@ -26,7 +26,7 @@ var Form = React.createClass({
   render:  function() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <input placeholder="github login" />
+        <input placeholder="github login" ref="login" />
         <button>Add</button>
       </form>
     );
