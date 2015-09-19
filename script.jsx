@@ -20,9 +20,10 @@ var Card = React.createClass({
 });
 
 var Form = React.createClass({
+  handleSubmit:
   render:  function() {
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <input placeholder="github login" />
         <button>Add</button>
       </form>
