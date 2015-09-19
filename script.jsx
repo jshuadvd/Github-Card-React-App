@@ -22,6 +22,7 @@ var Card = React.createClass({
 var Form = React.createClass({
   handleSubmit: function(e) {
     e.preventDefault();
+    var loginInput = React.findDOMNode(this.refs.login);
   },
   render:  function() {
     return (
