@@ -20,7 +20,9 @@ var Card = React.createClass({
 });
 
 var Form = React.createClass({
-  handleSubmit:
+  handleSubmit: function(e) {
+    e.preventDefault();
+  },
   render:  function() {
     return (
       <form onSubmit={this.handleSubmit}>
