@@ -26,8 +26,6 @@ var Form = React.createClass({
 
     // Add Card Here
     loginInput.value = '';
-
-
   },
   render:  function() {
     return (
@@ -43,13 +41,16 @@ var Main = React.createClass({
   getInitialState: function() {
     return {logins: []};
   },
+  addCard: function() {
+
+  },
   render: function() {
     var cards = this.state.logins.map(function(login) {
       return (<Card login={login} />);
     });
     return (
       <div>
-        <Form />
+        <Form addCard={this.addCard} />
         {cards}
       </div>
     )
