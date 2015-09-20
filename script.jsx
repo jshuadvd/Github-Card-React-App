@@ -23,8 +23,8 @@ var Form = React.createClass({
   handleSubmit: function(e) {
     e.preventDefault();
     var loginInput = React.findDOMNode(this.refs.login);
-
     // Add Card Here
+    this.this.props.addCard(loginInput);
     loginInput.value = '';
   },
   render:  function() {
