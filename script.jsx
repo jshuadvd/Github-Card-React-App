@@ -2,6 +2,7 @@ var Card = React.createClass({
   getInitialState: function() {
     return {};
   },
+  // Fetching Data for the component
   componentDidMount: function() {
     var component = this;
     $.get("https://api.github.com/users/" + this.props.login, function(data) {
