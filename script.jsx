@@ -25,6 +25,7 @@ var Form = React.createClass({
     var loginInput = React.findDOMNode(this.refs.login);
 
     // Add Card Here
+    loginInput.value = '';
 
 
   },
