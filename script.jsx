@@ -20,6 +20,7 @@ var Card = React.createClass({
   }
 });
 
+// Creating Simple form and accessing elements from within React
 var Form = React.createClass({
   handleSubmit: function(e) {
     e.preventDefault();
@@ -45,6 +46,7 @@ var Main = React.createClass({
   addCard: function(loginToAdd) {
     this.setState({logins: this.state.logins.concat(loginToAdd)});
   },
+  //Mapping the array of github usernames into Card components
   render: function() {
     var cards = this.state.logins.map(function(login) {
       return (<Card login={login} />);
