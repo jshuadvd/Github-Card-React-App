@@ -41,8 +41,8 @@ var Main = React.createClass({
   getInitialState: function() {
     return {logins: []};
   },
-  addCard: function() {
-
+  addCard: function(loginToAdd) {
+    this.setState({logins: this.state.logins.concat(loginToAdd)});
   },
   render: function() {
     var cards = this.state.logins.map(function(login) {
